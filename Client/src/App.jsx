@@ -10,7 +10,7 @@ export const App = () => {
         <Routes>
             <Route path="/">
                 <Route path="" Component={HomePage} />
-                <Route path="dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+                <Route path="dashboard" element={<ProtectedRoute children={<Dashboard />} />} />
                 <Route path="signup" Component={SignupPage} />
                 <Route path="login" Component={LoginPage} />
             </Route>
