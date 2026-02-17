@@ -8,7 +8,7 @@ export const ProtectedRoute = ({ children }) => {
     const token = localStorage.getItem("token");
 
     const updateIsValid = (bool) => {
-        setTimeout(() => {
+        setTimeout(() => { // Add a delay to simulate loading state. This is not necessary, and not required in a real-world scenario.
             setIsValid(bool);
         }, 2500);
     };
