@@ -13,6 +13,17 @@ const schema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+    otp: {
+        value: {
+            type: Number
+        },
+        expire: {
+            type: Number
+        },
+        cooldown: {
+            type: Number
+        }
     }
 }, {
     timestamps: true
